@@ -1,0 +1,90 @@
+html 
+  font-family: Georgia, 'Times New Roman', Times, serif, "Microsoft yahei"
+  color: #222
+
+html, body 
+    overflow-x: hidden;
+    overflow-y: auto;
+
+
+a 
+  color: #222;
+  cursor: pointer;
+
+a:hover 
+  color: light(#222);
+  text-decoration: none;
+
+ul 
+  margin: 0;
+  list-style: none;
+
+img 
+  width: 100%;
+  height: auto;
+
+::placeholder 
+  color: bg-modifier-color;
+
+h1 {
+  margin: 0;
+}
+
+[class^="ico"]
+  font-size 20px
+
+.blog-line
+  position relative
+  &::after
+    position: absolute
+    margin: auto
+    content: ''
+    width 1px 
+    height 80%
+    background-color: font-modifier-color  
+
+.blog-line--clo::after
+  right: 0
+  top: 0
+  bottom: 0
+  content: ''
+  width: 1px
+  height: 80%
+  transform: scaleX(0.5)
+
+.blog-line--row::after 
+  left: 0
+  right: 0
+  bottom: 0
+  content: ''
+  width: 94%
+  height: 1px
+  transform: scaleX(1) scaleY(0.5)
+
+[hidden]
+  display: none !important
+
+
+.alert
+  margin-bottom: 0
+
+.panel-body 
+  padding 0
+
+.control-label
+  font-size font-size-p
+
+.blog-modal--group
+  padding-top: padding-space * 2
+
+i 
+  font-style: normal
+
+input[readonly]
+  border none
+  outline none
+  &:hover,
+  &:focus
+    border none
+    outline none
+    box-shadow 0 0 0 #000
